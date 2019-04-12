@@ -1,0 +1,46 @@
+{
+  "name": "create-parcel-app",
+  "version": "0.1.0",
+  "description": "Playing around with parcel and react",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development parcel src/index.html",
+    "test": "jest --watch",
+    "build": "cross-env NODE_ENV=production parcel build src/index.html"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brandonrisell/create-parcel-app.git"
+  },
+  "author": "Brandon Risell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brandonrisell/create-parcel-app/issues"
+  },
+  "homepage": "https://github.com/brandonrisell/create-parcel-app#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "acorn": "^6.1.1",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-styled-components": "^1.10.0",
+    "cross-env": "^5.2.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.12.4",
+    "jest-cli": "^24.7.1",
+    "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0"
+  }
+}
